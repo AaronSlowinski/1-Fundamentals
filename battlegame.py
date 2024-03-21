@@ -25,4 +25,4 @@ print("3. Human")
 print("4. Orc")
 print("5. Exit")
 
-character_choice = input("Choose your character: ")
+character = input("Choose your character: ")
