@@ -24,7 +24,8 @@ while True:
     print("1. Wizard")
     print("2. Elf")
     print("3. Human")
-    print("4. Dwarf\n")
+    print("4. Dwarf")
+    print("5. Exit")
 
     character = input("Choose your character:").lower()    
 
@@ -48,7 +49,9 @@ while True:
         my_hp = dwarf_hp
         my_damage = dwarf_damage
         break
-
+    elif character == "5" or character== "exit":
+        print("You have chosen to exit the game.")
+        exit()
     else: 
         print("\n Unknown character")  
     break
