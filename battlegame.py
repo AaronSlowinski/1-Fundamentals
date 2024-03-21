@@ -26,7 +26,7 @@ while True:
     print("3. Human")
     print("4. Dwarf\n")
 
-    character = input("Choose your character:")    
+    character = input("Choose your character:").lower()    
 
     if character == "1" or character=="wizard":
         character = wizard
