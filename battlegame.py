@@ -1,4 +1,10 @@
-# Task 1
+"""
+Battle Game Work Shop 1
+Aaron S.
+Last updated: 03/23/2024
+
+"""
+# Task 1 Game Variables
     
 wizard = "Wizard"
 elf = "Elf"
@@ -19,7 +25,7 @@ dwarf_damage = 60
 
 dragon_damage = 50
 
-#Task 2 and Task 3
+#Task 2 and Task 3 Player Choice
 while True:
     print("\n Welcome to the Battle Game!\n")
     print("1. Wizard")
@@ -57,11 +63,12 @@ while True:
         print("\n Unknown character")  
     break
 
+# Player Choice
 print("\n You have chosen a mighty: ", character)
 print("Health: ", my_hp)
 print("Damage: ", my_damage)
     
-#Task 4
+# Task 4 Battle Dragon
 
 while True:
     dragon_hp = dragon_hp - my_damage
@@ -79,7 +86,8 @@ while True:
     if my_hp <= 0:
         print("\nThe", character, "has lost the battle!")
         break
-    
+
+# Task 5 Play Again
 while True:
     play_again = input("\nDo you want to play again? Type Yes or No: ").lower()
     if play_again == "yes":
@@ -89,3 +97,4 @@ while True:
         exit()
     else:
         print("Invalid input. Please enter 'Yes' or 'No'.")
+
