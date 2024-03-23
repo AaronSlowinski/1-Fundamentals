@@ -1,4 +1,5 @@
 # Task 1
+    
 wizard = "Wizard"
 elf = "Elf"
 human = "Human"
@@ -78,3 +79,15 @@ while True:
     if my_hp <= 0:
         print("\n The", character, "has lost the battle.")
         break
+    
+play_again = input("Do you want to play again? Type Yes or No: ").lower()
+
+while True:
+    if play_again == "1" or play_again == "yes":
+        print("\n")
+        start()
+    elif play_again == "2" or play_again == "no":
+        break
+    else:
+        break
+start();
