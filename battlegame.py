@@ -21,12 +21,12 @@ dragon_damage = 50
 
 #Task 2 and Task 3
 while True:
-    print("\n Choose your character:")
+    print("\n Welcome to the Battle Game!\n")
     print("1. Wizard")
     print("2. Elf")
     print("3. Human")
     print("4. Dwarf")
-    print("5. Exit")
+    print("5. Exit\n")
 
     character = input("Choose your character:").lower()    
 
