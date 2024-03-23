@@ -65,7 +65,7 @@ print("Damage: ", my_damage)
 
 while True:
     dragon_hp = dragon_hp - my_damage
-    print("\nThe", character, "damaged the Dragon!")
+    print("\n The", character, "damaged the Dragon!")
     print("The Dragon's hitpoints are now: ", dragon_hp)
     
     if dragon_hp <= 0:
@@ -73,7 +73,7 @@ while True:
         break
     
     my_hp = my_hp - dragon_damage
-    print("\nThe Dragon strikes back at", character)
+    print("\n The Dragon strikes back at", character)
     print("The", character, "'s hitpoints are now: ", my_hp)
     
     if my_hp <= 0:
