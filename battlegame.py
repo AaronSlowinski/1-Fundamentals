@@ -57,7 +57,7 @@ while True:
         print("\n Unknown character")  
     break
 
-print("\nYou have chosen a mighty: ", character)
+print("\n You have chosen a mighty: ", character)
 print("Health: ", my_hp)
 print("Damage: ", my_damage)
     
@@ -65,29 +65,27 @@ print("Damage: ", my_damage)
 
 while True:
     dragon_hp = dragon_hp - my_damage
-    print("\n The", character, "damaged the Dragon!")
+    print("\nThe", character, "damaged the Dragon!")
     print("The Dragon's hitpoints are now: ", dragon_hp)
     
     if dragon_hp <= 0:
-        print("\n The Dragon has lost the battle.")
+        print("The Dragon has lost the battle.")
         break
     
     my_hp = my_hp - dragon_damage
-    print("\n The Dragon strikes back at", character)
+    print("\nThe Dragon strikes back at", character)
     print("The", character, "'s hitpoints are now: ", my_hp)
     
     if my_hp <= 0:
-        print("\n The", character, "has lost the battle.")
+        print("\nThe", character, "has lost the battle!")
         break
     
-play_again = input("Do you want to play again? Type Yes or No: ").lower()
-
 while True:
-    if play_again == "1" or play_again == "yes":
-        print("\n")
-        start()
-    elif play_again == "2" or play_again == "no":
-        break
+    play_again = input("\nDo you want to play again? Type Yes or No: ").lower()
+    if play_again == "yes":
+        exec(open("battlegame.py").read())
+    elif play_again == "no":
+        print("\nThank you for playing the Battle Game!")
+        exit()
     else:
-        break
-start();
+        print("Invalid input. Please enter 'Yes' or 'No'.")
