@@ -19,16 +19,20 @@ def atm_menu(name):
     print("------------------------------------------")
     
 #declare a variable named name
+name = input("Enter name to register: ")
 while len(name) < 1 or len(name) > 10:
-    name = input("Enter name to register: ")
     if len(name) < 1:
         print("Name must be at least 1 character long.")
     elif len(name) > 10:
         print("Name must be at most 10 characters long.")
+    name = input("Enter name to register: ")
         
 
 #declare a variable named pin
 pin = input("Enter PIN: ")
+while len(pin) != 4:
+    print("PIN must be exactly 4 characters long. Please try again.")
+    pin = input("Enter PIN: ")
     
 #declare a variable named balance
 balance = 0
