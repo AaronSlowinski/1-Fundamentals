@@ -19,8 +19,14 @@ def atm_menu(name):
     print("------------------------------------------")
     
 #declare a variable named name
-name = input("Enter name to register: ")
-    
+while len(name) < 1 or len(name) > 10:
+    name = input("Enter name to register: ")
+    if len(name) < 1:
+        print("Name must be at least 1 character long.")
+    elif len(name) > 10:
+        print("Name must be at most 10 characters long.")
+        
+
 #declare a variable named pin
 pin = input("Enter PIN: ")
     
@@ -48,8 +54,12 @@ while True:
         balance = account.deposit(balance)
         account.show_balance(balance)
     elif option == "3":
-        balance = account.withdraw(balance)
-        account.show_balance(balance)
+        withdraw_amount = float(input("Enter amount to withdraw: "))
+        if withdraw_amount > balance:
+            print("Error: Insufficient funds. Current balance is $" + str(balance))
+        else:
+            balance -= withdraw_amount
+            account.show_balance(balance)
     elif option == "4":
         account.logout(name)
         break
