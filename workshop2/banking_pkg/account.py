@@ -1,19 +1,13 @@
-class Account:
-    def __init__(self, balance=0):
-        self.balance = balance
+def show_balance(balance):
+    print(f"Account balance: ${balance}")
 
-    def show_balance(self):
-        return self.balance
+def deposit(balance):
+    amount = float(input("Enter amount to deposit: "))
+    return balance + amount
 
-    def deposit(self, amount):
-        self.balance += amount
+def withdraw(balance):
+    amount = float(input("Enter amount to withdraw: "))
+    return balance - amount
 
-    def withdraw(self, amount):
-        if amount <= self.balance:
-            self.balance -= amount
-        else:
-            print("Insufficient funds.")
-
-    def logout(self):
-        # Perform any necessary logout operations here
-        pass
+def logout(name):
+    print(f"Goodbye, {name}")
