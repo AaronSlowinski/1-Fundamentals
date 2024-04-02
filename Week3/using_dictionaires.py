@@ -3,4 +3,8 @@ state_capitals = {"washington": "olympia", "oregon": "salem", "california": "sac
 
 #print (state_capitals["washington"])
 state_capitals["washington"] = "Aberdeen"
-print (state_capitals["washington"])
+state_capitals["texas"] = "Austin"
+
+print (state_capitals)
+
+
