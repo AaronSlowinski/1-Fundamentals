@@ -7,4 +7,11 @@ state_capitals["texas"] = "Austin"
 
 print (state_capitals)
 
+del state_capitals["california"]
+
+print (state_capitals)
+
+state_capitals.pop("oregon")
+print (state_capitals)
+
 
