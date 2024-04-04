@@ -5,12 +5,12 @@ Last updated:
 
 """
 
-from donations_pkg.homepage import show_homepage, donate
+from donations_pkg.homepage import show_homepage, donate,show_donations
 from donations_pkg.user import login, register
 
-database = {"admin": "password123"}
-donations = []
-authorized_user = ""
+database = {"admin": "password123"} #dictionary to store username and password
+donations = [] #list to store donations
+authorized_user = "" #empty string to store authorized user
 
 while True:
     show_homepage() 
@@ -27,8 +27,7 @@ while True:
         password = input("Enter your password: ")
         authorized_user = login(database, username, password)
         print("\n")
-        
-        
+         
     elif option == "2":
         print("Register")
         username = input("Enter your username: ")
@@ -38,6 +37,7 @@ while True:
             database[username] = password
         print("\n")
         
+      
     elif option == "3":
         print("Donate")
         if authorized_user == "":
@@ -47,8 +47,12 @@ while True:
             donations.append(donation_string)
         print("\n")
         
+
     elif option == "4":
-        print("TODO: Write Show Donations Functionality")
+        print("Show Donations")
+        show_donations(donations)
+        print("\n")
+        
         
     elif option == "5":
         print("Goodbye!")
