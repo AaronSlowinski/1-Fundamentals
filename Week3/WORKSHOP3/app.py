@@ -1,14 +1,17 @@
 """
 ATM WorkShop 3 donations
 Aaron S.
-Last updated: 
+Last updated:04/06/2024 
 
 """
 
 from donations_pkg.homepage import show_homepage, donate,show_donations
 from donations_pkg.user import login, register
 
-database = {"admin": "password123"} #dictionary to store username and password
+database = {
+    "admin": "password123",
+    
+    }
 donations = [] #list to store donations
 authorized_user = "" #empty string to store authorized user
 
@@ -32,7 +35,7 @@ while True:
         print("Register")
         username = input("Enter your username: ")
         password = input("Enter your password: ")
-        authorized_user = register(database, username)
+        authorized_user = register(database, username, password)
         if authorized_user != "":
             database[username] = password
         print("\n")
