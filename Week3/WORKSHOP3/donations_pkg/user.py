@@ -15,6 +15,5 @@ def register(database, username):
         print("Username already registered.")
         return ""
     else:
-        database[username] = ""
-        print("Username registered.")
+        print(f"{username} is now registered.")
         return username
