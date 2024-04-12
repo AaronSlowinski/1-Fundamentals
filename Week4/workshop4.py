@@ -71,12 +71,12 @@ class BankUser(User):
         else:
             return False
         
-"""driver code for task 1
+
 
 user1 = User("Bob", 1234, "password")
 print(f"Name: {user1.name}, PIN: {user1.pin}, Password: {user1.password}")        
         
-"""
+
 
 
 """driver code for task 2
