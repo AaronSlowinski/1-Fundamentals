@@ -5,6 +5,8 @@ Wkshop Wk 4
 
 """
 
+
+# user class defined with name, pin, and password attributes
 class User:
     def __init__(self, name, pin, password):
         self.name = name
@@ -29,7 +31,7 @@ class User:
         else:
             print("Password must be at least 5 characters.")
 
-
+# bank user class defined with balance and on_hold attributes
 class BankUser(User):
     def __init__(self, name, pin, password):
         super().__init__(name, pin, password)
@@ -137,8 +139,5 @@ if bank_user2.transfer_money(bank_user1, 500, 1234):
     if bank_user2.request_money(bank_user1, 200, 4321, "new_password"):
         bank_user2.show_balance()
         bank_user1.show_balance()
-
-
-        
-        
+    
 """
