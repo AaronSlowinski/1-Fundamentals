@@ -1,3 +1,10 @@
+"""
+Aaron Slowinski
+Wkshop Wk 4
+4/13/2024
+
+"""
+
 class User:
     def __init__(self, name, pin, password):
         self.name = name
@@ -78,7 +85,7 @@ print(f"Name: {user1.name}, PIN: {user1.pin}, Password: {user1.password}")
 """
         
 
-
+"""driver code for task 2
 user1 = User("Bob", 1234, "password")
 print(f"Name: {user1.name}, PIN: {user1.pin}, Password: {user1.password}")
 
@@ -87,7 +94,7 @@ user1.change_pin(4321)
 user1.change_password("new_password")
 
 print(f"Updated Name: {user1.name}, Updated PIN: {user1.pin}, Updated Password: {user1.password}")
-       
+"""      
 
 
 """driver code for task 3
