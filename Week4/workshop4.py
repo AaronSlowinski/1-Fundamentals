@@ -72,14 +72,13 @@ class BankUser(User):
             return False
         
 
-
+"""driver code for task 1
 user1 = User("Bob", 1234, "password")
 print(f"Name: {user1.name}, PIN: {user1.pin}, Password: {user1.password}")        
+"""
         
 
 
-
-"""driver code for task 2
 user1 = User("Bob", 1234, "password")
 print(f"Name: {user1.name}, PIN: {user1.pin}, Password: {user1.password}")
 
@@ -89,7 +88,7 @@ user1.change_password("new_password")
 
 print(f"Updated Name: {user1.name}, Updated PIN: {user1.pin}, Updated Password: {user1.password}")
        
-"""
+
 
 """driver code for task 3
 
